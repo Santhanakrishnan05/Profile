@@ -1,0 +1,187 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: Arial,Helvetica, sans-serif;
+
+}
+.container{
+    display: grid;
+    padding-top: 40px;
+    background-color: #121212;
+    height: auto;
+    width: 90vw;
+    border-radius: 5px;
+}
+.small-con{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+.logo{
+    background: linear-gradient(to right, #FA6E00,#E60026);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: 6%;
+}
+.nav ul li{ 
+    display: inline-flex;
+    text-decoration: none;
+    margin-left: 70px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #959595;
+    transition: .5s;
+}
+.nav ul li:hover{
+    color: #FD6F00;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.vector{
+    flex-grow: 1;
+    flex-basis: 200;
+    background-image: url(./assets/images/Vector.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: grid;
+    width: 500px;
+    height: 600px;
+}
+#hi{
+    font-size: 15px;
+    color: #6c6a6a;
+}
+#name{
+    font-size: 20px;
+    color: #959595;
+}
+#role{
+    font-size: 40px;
+    background: linear-gradient(to left, #FA6E00,#E60026);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.info{
+    height: 150px;
+}
+
+.links ul li{
+    display: inline-flex;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #959595;
+    transition: .5s;
+}
+.links ul li:hover{
+    color: #FD6F00;
+}
+.btn-contact-resume{
+    display: flex;
+    gap: 30px;
+}
+.btn-contact-resume button{
+    display: flex;
+    height: 40px;
+    font-size: 20px;
+    color: #959595;
+    align-items: center;
+    background: none;
+    border: 2px solid #959595;
+    border-radius: 6px;
+    padding: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+.btn-contact-resume a{
+    text-decoration: none;
+}
+.btn-contact-resume button:hover{
+    background: linear-gradient(to left, #FD6F00,#E46400);
+    color: white;
+    border: 2px solid #FD6F00;
+}
+.practice{
+    background-color: #1c1b1b;
+    width: 380px;
+    height: 100px;
+    gap: 20px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#practice-links{
+    font-size: 7px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.practice:hover > :not(:hover) {
+    filter: blur(5px);
+    opacity: .5px;
+}
+#practice-links:hover{
+    border: 2px solid #6e4322;
+}
+.practice button{
+    background: none;
+    border: none;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+
+[popover] {
+    opacity: 6;
+    transition: opacity 4s;
+  }
+  
+  [popover]:popover-open {
+    opacity: 1;
+  }
+
+.pop{
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #b5adad;
+    opacity: 20px;
+    transition: 4s;
+}
+
+.photo{
+    flex-grow: 1;
+    flex-basis: 200;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #a41616;
+    width: 500px;
+    height: 500px;
+}
+
+
+@media only screen and (max-width: 810px){
+    .nav ul li{
+        display: flex;
+        text-decoration: none;
+        margin-left: 70px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #959595;
+        transition: .5s;
+    }
+    .vector{
+        text-align: center;
+    }
+}
