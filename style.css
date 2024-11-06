@@ -70,7 +70,7 @@ body{
     color: #959595;
 }
 #role{
-    font-size: 40px;
+    font-size: 35px;
     background: linear-gradient(to left, #FA6E00,#E60026);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
