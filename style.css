@@ -129,7 +129,7 @@ body{
 }
 #practice-links{
     font-size: 7px;
-    padding: 7px;
+    padding: 8px;
     cursor: pointer;
     border-radius: 5px;
     transition: .3s ease;
@@ -149,16 +149,6 @@ img{
     width: 30px;
     height: 30px;
 }
-
-[popover] {
-    opacity: 6;
-    transition: opacity 4s;
-  }
-  
-  [popover]:popover-open {
-    opacity: 1;
-  }
-
 .pop{
     width: 250px;
     height: 150px;
