@@ -1,5 +1,5 @@
 body{
-    margin:0px;
+    margin: 0px;
     padding: 0px;
     background-color: #0a0a0a;
     display: flex;
@@ -18,8 +18,7 @@ body{
 }
 .small-con{
     display: flex;
-    justify-content: space-around;
-    height: 100px;
+    justify-content: space-around; 
 }
 .logo{
     background: linear-gradient(to right, #FA6E00,#E60026);
@@ -40,6 +39,9 @@ body{
 .nav ul li:hover{
     color: #FD6F00;
 }
+.nav-for-phone-logo{
+    display: none;
+}
 .main{
     display: flex;
     align-items: center;
@@ -50,11 +52,11 @@ body{
 .vector{
     flex-grow: 1;
     flex-basis: 200;
-    padding: 0%;
     background-image: url(./assets/icons/Vector.png);
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
+    justify-items: center;
     display: grid;
     width: auto;
     height: 600px;
@@ -76,11 +78,13 @@ body{
 .info{
     height: 150px;
 }
-
+.links{
+    display: flex;
+}
 .links ul li{
     display: inline-flex;
-    margin-left: 20px;
     cursor: pointer;
+    margin-right: 25px;
     font-size: 40px;
     color: #959595;
     transition: .5s;
@@ -95,7 +99,7 @@ body{
 .btn-contact-resume button{
     display: flex;
     height: 40px;
-    font-size: 20px;
+    font-size: 19px;
     color: #959595;
     align-items: center;
     background: none;
@@ -115,8 +119,8 @@ body{
 }
 .practice{
     background-color: #1c1b1b;
-    width: 380px;
-    height: 100px;
+    width: 330px;
+    height: 85px;
     gap: 20px;
     border-radius: 7px;
     display: flex;
@@ -125,7 +129,7 @@ body{
 }
 #practice-links{
     font-size: 7px;
-    padding: 15px;
+    padding: 7px;
     cursor: pointer;
     border-radius: 5px;
     transition: .3s ease;
@@ -181,6 +185,20 @@ img{
     }
     .vector{
         text-align: center;
+        justify-content: center;
+    }
+    .nav-for-phone-logo{
+        display: block;
+        margin-top: 2.5%;
+    }
+    .nav-for-phone-logo a{
+        text-decoration: none;
+        color: #959595;
+        font-size: 30px;
+        transition: .5s;
+    }
+    .nav-for-phone-logo a:hover{
+        color: #FD6F00;
     }
 
 }
